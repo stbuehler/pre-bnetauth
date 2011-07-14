@@ -1,0 +1,5 @@
+.key { text-align: center; font-size: 200%; color: red; letter-spacing: 3px;  font-family: monospace; font-weight: bold }
+.palm-dark .palm-row .title .label { color: #2f85df; }
+.licenses * { font-size: 8px; }
+
+body.palm-default { background: url('../images/background.png') no-repeat fixed center center; }

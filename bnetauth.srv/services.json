@@ -1,0 +1,22 @@
+{
+	"id": "de.stbuehler.bnetauth.service",
+	"description": "BNet Auth service",
+	"services": [
+		{
+			"name": "de.stbuehler.bnetauth.service",
+			"description": "BNet Auth service",
+			"commands": [
+				{ 
+					"name": "enroll", 
+					"assistant": "EnrollCommandAssistant",
+					"public": true
+				},
+				{ 
+					"name": "list", 
+					"assistant": "EnrollRegionListCommandAssistant",
+					"public": true
+				}
+			]
+		}
+	]
+}

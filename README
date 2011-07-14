@@ -1,0 +1,13 @@
+== Mobile Authenticator for Battle.net on WebOS ==
+
+This appliation should be compatible to Battle.net Mobile Authenticator applications known from other smartphones.
+Use at your own risk.
+
+* This application is not supported by Blizzard Entertainment, Inc.
+* Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+* The "Protocol":http://www.wowpedia.org/Battle.net_Mobile_Authenticator_Specification is known of course.
+* This application can manage multiple identities
+* If you have the <b>token</b> (only this and the current time is needed to generate a code), you can add it manually yourself (choose "Custom"); the same way you can backup your tokens generated with this application
+* The "name" and "serial" field are not important - the serial is an identifier used by Battle.net to associate the token with your account, and name is just a field for you
+* The token is entered in hexadecimal format and should be 40 bytes long (20 bytes binary) for Battle.net
+* You can setup auth for your own applications, just have a look at the protocol

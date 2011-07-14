@@ -1,0 +1,19 @@
+[
+	{"source": "app/assistants/app-assistant.js"},
+ 	{"source": "app/assistants/stage-assistant.js"},
+    {"source": "app/models/authgen.js"},
+    {"source": "app/models/settings.js"},
+    {"source": "app/models/service.js"},
+    {
+        "scenes": "identities",
+        "source": "app/assistants/identities-assistant.js"
+    },
+    {
+        "scenes": "about",
+        "source": "app/assistants/about-assistant.js"
+    },
+    {
+        "scenes": "main",
+        "source": "app/assistants/main-assistant.js"
+    }
+]

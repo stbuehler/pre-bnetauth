@@ -1,0 +1,17 @@
+{
+	"id": "de.stbuehler.bnetauth",
+	"version": "1.0.5",
+	"type": "web",
+	"main": "index.html",
+	"theme": "dark",
+	"title": "Authenticator",
+	"icon": "icon-64.png",
+	"miniicon": "icon-48.png",
+	"vendor": "Stefan Buehler",
+	"vendorurl": "http://stbuehler.de",
+	"copyright": "© Copyright 2011 Stefan Bühler",
+	"support": {
+		"url": "https://github.com/stbuehler/pre-bnetauth",
+		"email": { "address": "palm-dev@stbuehler.de", "subject": "[Authenticator support]" }
+	}
+}
