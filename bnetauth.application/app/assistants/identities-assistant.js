@@ -16,6 +16,7 @@ var IdentitiesAssistant = Class.create({
 		this.onIdListDelete = this.onIdListDelete.bind(this);
 		this.onIdListReorder = this.onIdListReorder.bind(this);
 		this.updateShowToken = this.updateShowToken.bind(this);
+		this.backTapHandler = this.backTapHandler.bind(this);
 		/* this is the creator function for your scene assistant object. It will be passed all the 
 		   additional parameters (after the scene name) that were passed to pushScene. The reference
 		   to the scene controller (this.controller) has not be established yet, so any initialization
@@ -73,6 +74,8 @@ var IdentitiesAssistant = Class.create({
 		this.controller.listen('idList', Mojo.Event.listDelete, this.onIdListDelete);
 		this.controller.listen('idList', Mojo.Event.listReorder, this.onIdListReorder);
 		this.controller.listen('toggleTokens', Mojo.Event.propertyChange, this.updateShowToken);
+
+		this.controller.listen('back', Mojo.Event.tap, this.backTapHandler);
 	},
 
 	activate: function(event) {
@@ -92,6 +95,7 @@ var IdentitiesAssistant = Class.create({
 		this.controller.stopListening('idList', Mojo.Event.listDelete, this.onIdListDelete);
 		this.controller.stopListening('idList', Mojo.Event.listReorder, this.onIdListReorder);
 		this.controller.stopListening('toggleTokens', Mojo.Event.propertyChange, this.updateShowToken);
+		this.controller.stopListening('back', Mojo.Event.tap, this.backTapHandler);
 	},
 
 	scrollTo: function(element) {
@@ -169,5 +173,9 @@ var IdentitiesAssistant = Class.create({
 				break;
 			}
 		}
+	},
+
+	backTapHandler: function(event) {
+		this.controller.stageController.popScene();
 	},
 });

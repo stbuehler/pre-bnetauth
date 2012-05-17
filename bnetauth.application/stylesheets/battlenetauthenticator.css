@@ -2,4 +2,30 @@
 .palm-dark .palm-row .title .label { color: #2f85df; }
 .licenses * { font-size: 8px; }
 
-body.palm-default { background: url('../images/background.png') no-repeat fixed center center; }
+body.palm-default { background: url('../images/background.png') no-repeat fixed center center; background-size: 100% }
+
+
+.backPill
+{
+	position: absolute;
+	top: 9px;
+	left: -16px;
+	height: 33px;
+	width: 38px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../images/back-pill.png);
+}
+.backPill:active
+{
+	background-image: url(../images/back-pill-active.png);
+}
+
+body.palm-dark .backPill
+{
+	background-image: url(../images/back-pill-dark.png);
+}
+body.palm-dark .backPill:active
+{
+	background-image: url(../images/back-pill-dark-active.png);
+}

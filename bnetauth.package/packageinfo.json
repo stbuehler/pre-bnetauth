@@ -2,7 +2,7 @@
 	"id": "de.stbuehler.bnetauth",
 	"package_format_version": 2,
 	"loc_name": "Authenticator",
-	"version": "1.0.5",
+	"version": "1.0.7",
 	"icon": "icon-64.png",
 	"vendor": "Stefan Buehler",
 	"vendorurl": "http://stbuehler.de",

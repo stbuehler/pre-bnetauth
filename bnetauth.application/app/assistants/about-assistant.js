@@ -1,5 +1,6 @@
 var AboutAssistant = Class.create({
 	initialize: function() {
+		this.backTapHandler = this.backTapHandler.bind(this);
 	},
 	
 	setup: function() {
@@ -22,6 +23,8 @@ var AboutAssistant = Class.create({
 		this.controller.setupWidget("about", {
 			url: Mojo.appPath + 'app/views/about/about.html',
 		}, { }); 
+
+		this.controller.listen('back', Mojo.Event.tap, this.backTapHandler);
 	},
 	
 	activate: function(event) {
@@ -37,5 +40,10 @@ var AboutAssistant = Class.create({
 	cleanup: function(event) {
 		/* this function should do any cleanup needed before the scene is destroyed as 
 		   a result of being popped off the scene stack */
+		this.controller.stopListening('back', Mojo.Event.tap, this.backTapHandler);
+	},
+	
+	backTapHandler: function(event) {
+		this.controller.stageController.popScene();
 	},
 });
