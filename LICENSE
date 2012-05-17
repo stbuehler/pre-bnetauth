@@ -66,5 +66,5 @@ jsbn:
 	  tjw@cs.Stanford.EDU
 
 
-The back-pill images are from preware (http://git.webos-internals.org/applications/preware), which is licensed under GNU GPL 2, see
-http://git.webos-internals.org/applications/preware/tree/LICENSE
+The back-pill images are from preware (https://github.com/webos-internals/preware), which is licensed under GNU GPL 2, see
+https://github.com/webos-internals/preware/blob/master/LICENSE
